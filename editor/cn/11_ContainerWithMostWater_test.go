@@ -24,18 +24,37 @@ import (
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func maxArea(height []int) int {
+	result := 0
+	lpt := 0
+	rpt := len(height) - 1
+	for lpt < rpt {
+		cur := 0
+		if height[lpt] < height[rpt] {
+			cur = height[lpt] * (rpt - lpt)
+			lpt++
+		} else {
+			cur = height[rpt] * (rpt - lpt)
+			rpt--
+		}
+		if cur > result {
+			result = cur
+		}
+	}
+	return result
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
 
 func TestContainerWithMostWater(t *testing.T) {
 	testContainerWithMostWater(t, maxArea1)
+	testContainerWithMostWater(t, maxArea)
 }
 
 func BenchmarkTestContainerWithMostWater(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		nums := []int{1, 3, 2, 5, 25, 24, 5}
-		maxArea(nums) // 26.2 ns/op
+		//maxArea1(nums) // 26.2 ns/op
+		maxArea(nums) // 8.34 ns/op
 	}
 }
 
