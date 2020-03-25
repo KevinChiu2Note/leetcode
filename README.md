@@ -10,5 +10,6 @@
 - [linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/) - [源码](./editor/cn/141_LinkedListCycle_test.go)
 - [linked-list-cycle2](https://leetcode-cn.com/problems/linked-list-cycle-ii/) - [源码](./editor/cn/142_LinkedListCycleIi_test.go)
 - [lru-cache](https://leetcode-cn.com/problems/lru-cache/) - [源码](./editor/cn/146_LruCache_test.go)
+- [rotate-array](https://leetcode-cn.com/problems/rotate-array/) - [源码](./editor/cn/189_RotateArray_test.go)
 - [reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/) - [源码](./editor/cn/206_ReverseLinkedList_test.go)
 - [move-zeroes](https://leetcode-cn.com/problems/move-zeroes/) - [源码](./editor/cn/283_MoveZeroes_test.go)
