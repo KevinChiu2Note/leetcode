@@ -8,6 +8,7 @@
 - [reverse-nodes-in-k-group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) - [源码](./editor/cn/25_ReverseNodesInKGroup_test.go)
 - [remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) - [源码](./editor/cn/26_RemoveDuplicatesFromSortedArray_test.go)
 - [climbing-stairs](https://leetcode-cn.com/problems/climbing-stairs/) - [源码](./editor/cn/70_ClimbingStairs_test.go)
+- [merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array/) - [源码](./editor/cn/88_MergeSortedArray_test.go)
 - [linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/) - [源码](./editor/cn/141_LinkedListCycle_test.go)
 - [linked-list-cycle2](https://leetcode-cn.com/problems/linked-list-cycle-ii/) - [源码](./editor/cn/142_LinkedListCycleIi_test.go)
 - [lru-cache](https://leetcode-cn.com/problems/lru-cache/) - [源码](./editor/cn/146_LruCache_test.go)
