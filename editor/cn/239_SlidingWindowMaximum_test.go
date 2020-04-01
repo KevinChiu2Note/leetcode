@@ -50,7 +50,10 @@ import (
 //leetcode submit region begin(Prohibit modification and deletion)
 // 双端队列
 func maxSlidingWindow(nums []int, k int) []int {
-	// 判断数组长度，不符合直接返回
+	// 思路：
+	//1. 遍历元素 nums[i] ，然后跟队列尾部元素比较，如果比尾部元素大，就出队，然后继续比较，直到 nums[i] 小于尾部元素，然后将它入队。
+	//2. 然后用一下队列首部元素的下标，计算出队列中区间的长度，如果大于 k 了，那么队首元素就要出队。
+	//3. 最后队首元素就是当前区间的最大值。
 	if len(nums) == 0 {
 		return nums
 	}
@@ -58,30 +61,25 @@ func maxSlidingWindow(nums []int, k int) []int {
 	result := make([]int, len(nums)-k+1)
 	index := 0
 	for i := 0; i < len(nums); i++ {
-		// 如果i>=k，说明窗口已经初始化完成了
-		if i >= k {
-			// 队列中的第一个值就是
-			if l.Front().Value.(int) == nums[i-k] {
-				l.Remove(l.Front())
-			}
-		}
-		for l.Len() != 0 && nums[i] > l.Back().Value.(int) {
+		for l.Len() != 0 && nums[i] >= nums[l.Back().Value.(int)] {
 			l.Remove(l.Back())
 		}
-		l.PushBack(nums[i])
+		l.PushBack(i)
+		if i-l.Front().Value.(int)+1 > k {
+			l.Remove(l.Front())
+		}
 		if i >= k-1 {
-			result[index] = l.Front().Value.(int)
+			result[index] = nums[l.Front().Value.(int)]
 			index++
 		}
 	}
 	return result
 }
 
-
 //leetcode submit region end(Prohibit modification and deletion)
 
 func TestSlidingWindowMaximum(t *testing.T) {
-	fmt.Printf("%T\n",zero)
+	fmt.Printf("%T\n", zero)
 	assert.Equal(t, []int{3, 3, 5, 5, 6, 7}, maxSlidingWindow([]int{1, 3, -1, -3, 5, 3, 6, 7}, 3))
 }
 
@@ -103,7 +101,8 @@ func maxSlidingWindow_1(nums []int, k int) []int {
 	return result
 }
 
-const zero  = 0.0
+const zero = 0.0
+
 // 指针法
 func maxSlidingWindow_2(nums []int, k int) []int {
 	// 判断数组长度，不符合直接返回
@@ -135,6 +134,35 @@ func maxSlidingWindow_2(nums []int, k int) []int {
 			}
 			maxPos = curMaxPos
 			result[i] = nums[maxPos]
+		}
+	}
+	return result
+}
+
+// 双端队列 - 不好理解
+func maxSlidingWindow_3(nums []int, k int) []int {
+	// 判断数组长度，不符合直接返回
+	if len(nums) == 0 {
+		return nums
+	}
+	l := list.New()
+	result := make([]int, len(nums)-k+1)
+	index := 0
+	for i := 0; i < len(nums); i++ {
+		// 如果i>=k，说明窗口已经初始化完成了
+		if i >= k {
+			// 队列中的第一个值就是
+			if l.Front().Value.(int) == nums[i-k] {
+				l.Remove(l.Front())
+			}
+		}
+		for l.Len() != 0 && nums[i] > l.Back().Value.(int) {
+			l.Remove(l.Back())
+		}
+		l.PushBack(nums[i])
+		if i >= k-1 {
+			result[index] = l.Front().Value.(int)
+			index++
 		}
 	}
 	return result
