@@ -20,5 +20,6 @@
 - [rotate-array](https://leetcode-cn.com/problems/rotate-array/) - [源码](./editor/cn/189_RotateArray_test.go)
 - [reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/) - [源码](./editor/cn/206_ReverseLinkedList_test.go)
 - [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) - [源码](./editor/cn/239_SlidingWindowMaximum_test.go)
+- [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) - [源码](./editor/cn/242_ValidAnagram_test.go)
 - [move-zeroes](https://leetcode-cn.com/problems/move-zeroes/) - [源码](./editor/cn/283_MoveZeroes_test.go)
 - [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) - [源码](./editor/cn/641_DesignCircularDeque_test.go)
