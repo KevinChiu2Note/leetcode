@@ -9,6 +9,7 @@
 - [reverse-nodes-in-k-group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) - [源码](./editor/cn/25_ReverseNodesInKGroup_test.go)
 - [remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) - [源码](./editor/cn/26_RemoveDuplicatesFromSortedArray_test.go)
 - [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) - [源码](./editor/cn/42_TrappingRainWater_test.go)
+- [group-anagrams](https://leetcode-cn.com/problems/group-anagrams/) - [源码](./editor/cn/49_GroupAnagrams_test.go)
 - [plus-one](https://leetcode-cn.com/problems/plus-one/) - [源码](./editor/cn/66_PlusOne_test.go)
 - [climbing-stairs](https://leetcode-cn.com/problems/climbing-stairs/) - [源码](./editor/cn/70_ClimbingStairs_test.go)
 - [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) - [源码](./editor/cn/84_LargestRectangleInHistogram_test.go)
