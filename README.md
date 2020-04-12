@@ -17,6 +17,7 @@
 - [binary-tree-inorder-traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) - [源码](./editor/cn/94_BinaryTreeInorderTraversal_test.go)
 - [linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/) - [源码](./editor/cn/141_LinkedListCycle_test.go)
 - [linked-list-cycle2](https://leetcode-cn.com/problems/linked-list-cycle-ii/) - [源码](./editor/cn/142_LinkedListCycleIi_test.go)
+- [binary-tree-preorder-traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) - [源码](./editor/cn/144_BinaryTreePreorderTraversal_test.go)
 - [lru-cache](https://leetcode-cn.com/problems/lru-cache/) - [源码](./editor/cn/146_LruCache_test.go)
 - [min-stack](https://leetcode-cn.com/problems/min-stack/) - [源码](./editor/cn/155_MinStack_test.go)
 - [rotate-array](https://leetcode-cn.com/problems/rotate-array/) - [源码](./editor/cn/189_RotateArray_test.go)
