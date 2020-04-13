@@ -26,3 +26,4 @@
 - [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) - [源码](./editor/cn/242_ValidAnagram_test.go)
 - [move-zeroes](https://leetcode-cn.com/problems/move-zeroes/) - [源码](./editor/cn/283_MoveZeroes_test.go)
 - [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) - [源码](./editor/cn/641_DesignCircularDeque_test.go)
+- [n-ary-tree-postorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/) - [源码](./editor/cn/590_NAryTreePostorderTraversal_test.go)
